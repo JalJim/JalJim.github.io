@@ -1,0 +1,316 @@
+/* Styles d'impression optimisés pour une seule page A4 */
+@media print {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    html, body {
+        width: 210mm !important;
+        height: 297mm !important;
+        background: white !important;
+        color: black !important;
+        font-size: 9pt !important;
+        line-height: 1.2 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        overflow: hidden !important; /* Empêche tout débordement */
+    }
+    
+    .container {
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        height: 100% !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin: 0 !important;
+        background: white !important;
+    }
+    
+    .sidebar {
+        width: 30% !important;
+        height: 100% !important;
+        padding: 10mm !important;
+        background: white !important;
+        color: black !important;
+        font-size: 8pt !important;
+        border-right: 1px solid #ccc !important;
+    }
+    
+    .profile-picture {
+        text-align: center !important;
+        margin-bottom: 10px !important;
+        
+    }
+    
+    #profile-img {
+        width: 80px !important;
+        height: 80px !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 50% !important;
+        display: block !important;
+        margin: 0 auto 10px auto !important;
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+    
+    .main-content {
+        width: 70% !important;
+        height: 100% !important;
+        padding: 10mm !important;
+        font-size: 9pt !important;
+        overflow: hidden !important;
+        background: white !important;
+    }
+    
+    header {
+        margin-bottom: 5px !important;
+        text-align: left !important;
+    }
+    
+    header h1 {
+        font-size: 14pt !important;
+        margin-bottom: 2px !important;
+        color: black !important;
+    }
+    
+    header p {
+        font-size: 10pt !important;
+        margin-bottom: 3px !important;
+        color: black !important;
+    }
+    
+    section {
+        margin-bottom: 8px !important;
+        padding-bottom: 5px !important;
+        border-bottom: 1px solid #ddd !important;
+    }
+    
+    section h2 {
+        font-size: 11pt !important;
+        margin-bottom: 3px !important;
+        color: black !important;
+    }
+    
+    section h2::after {
+        display: none !important;
+    }
+    
+    /* Mise en page de la section profil et compétences */
+    .profile-skills-container {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 10px !important;
+        margin-bottom: 5px !important;
+    }
+    
+    .profile-column {
+        width: 50% !important;
+    }
+    
+    .skills-chart-column {
+        width: 50% !important;
+    }
+    
+    .chart-container {
+        height: 150px !important;
+        width: 100% !important;
+    }
+    
+    canvas#skillsChart {
+        display: block !important;
+        height: 150px !important;
+        width: 100% !important;
+    }
+    
+    .study, .job {
+        margin-bottom: 5px !important;
+        padding-left: 5px !important;
+        border-left: 2px solid #ffffff !important;
+    }
+    
+    .profile-column h2,
+    .studies h2,
+    .projects h2,
+    .experience h2{
+        color: #3d32da !important;
+    }
+
+    .study h3, .job h3 {
+        font-size: 10pt !important;
+        color: black !important;
+    }
+    
+    .study .date, .job .date {
+        font-size: 8pt !important;
+        color: black !important;
+    }
+    
+    .study .university, .job .company {
+        font-size: 9pt !important;
+        color: black !important;
+    }
+    
+    .project, .hobby {
+        padding: 5px !important;
+        margin-bottom: 5px !important;
+        border: 1px solid #ffffff !important;
+        background: white !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        box-shadow: none !important;
+    }
+    
+    .project h3, .hobby h3 {
+        color: black !important;
+    }
+    
+    ul {
+        padding-left: 15px !important;
+    }
+    
+    li {
+        font-size: 8pt !important;
+        margin-bottom: 2px !important;
+    }
+    
+    .hobbies-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 5px !important;
+    }
+    
+    .hobby {
+        width: 100% !important;
+    }
+    
+    .header-buttons, #theme-toggle, footer {
+        display: none !important;
+    }
+    
+    /* Le bouton d'impression ne doit pas apparaître lors de l'impression */
+    .print-button {
+        display: none !important;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+    
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 7pt !important;
+        color: #555 !important;
+    }
+    .contact-info h3,
+    .sidebar-section h3 {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    .contact-info li i, .skills-list li i, .certifications-list li i,
+    .project li i, .hobby h3 i {
+        color: black !important;
+    }
+    
+    .progress-container {
+        height: auto !important;
+        background: #e0e0e0 !important;
+    }
+    
+    .progress-bar {
+        background: #3d32da !important;
+    }
+    
+    .percentage {
+        display: none !important;
+    }
+    
+    .level-tooltip {
+        display: none !important;
+    }
+    
+    .skills-list img, .project img.tech-icon {
+        display: inline-block !important;
+        visibility: visible !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    /* Styles pour la liste des loisirs en impression */
+    .hobbies-list {
+        padding-left: 0 !important;
+        list-style: none !important;
+    }
+
+    .hobbies-list li {
+        font-size: 8pt !important;
+        margin-bottom: 2px !important;
+        padding: 3px 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 5px !important;
+    }
+
+    .hobbies-list i {
+        color: black !important;
+        width: 12px !important;
+    }
+    
+    /* Supprimer les éléments générés automatiquement par le navigateur */
+    @page {
+        size: A4 !important;
+        margin: 0 !important;
+    }
+    
+    /* Masquer les informations de date et d'URL qui apparaissent en bas de page */
+    html::after, body::after {
+        display: none !important;
+        content: none !important;
+    }
+    
+    /* Supprimer la pagination et autres éléments générés */
+    body::before, body::after,
+    .main-content::after, .container::after {
+        display: none !important;
+        content: none !important;
+    }
+    
+    /* Réduire légèrement les marges de tous les éléments pour gagner de l'espace */
+    section:last-child {
+        margin-bottom: 0 !important;
+        border-bottom: none !important;
+    }
+    
+    /* Compresser un peu plus les projets et expériences */
+    .project, .job, .study {
+        margin-bottom: 3px !important;
+        padding: 3px !important;
+    }
+    
+    /* Ajuster les tailles de texte pour gagner de l'espace */
+    p {
+        font-size: 8pt !important;
+        margin-bottom: 2px !important;
+    }
+    
+    /* Supprimer les numéros de page et URL en bas de page */
+    body > div:not(.container) {
+        display: none !important;
+    }
+    
+    /* Forcer l'absence de saut de page */
+    * {
+        page-break-after: avoid !important;
+        page-break-before: avoid !important;
+        page-break-inside: avoid !important;
+        break-after: avoid !important;
+        break-before: avoid !important;
+        break-inside: avoid !important;
+    }
+}
