@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adam Bougma - Développeur Web & Administrateur Réseau CV avec compétences en Python, Java, C++, PHP, MySQL et React">
+  <meta name="keywords" content="développeur web, administrateur réseau, Python, Java, C++, PHP, MySQL, React, CV, curriculum vitae, Adam Bougma">
+  <meta name="author" content="Adam Bougma">
+  <title>Adam Bougma - Développeur Web & Administrateur Réseau</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Bibliothèque d'animation AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Barre latérale -->
+    <aside class="sidebar" data-aos="fade-right">
+      <div class="profile-picture">
+        <img src="img/pp.jpg" alt="Adam Bougma - Développeur Web & Administrateur Réseau" id="profile-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22150%22%20height%3D%22150%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23ddd%22%2F%3E%3Ctext%20x%3D%2275%22%20y%3D%2285%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20fill%3D%22%23999%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'">
+        <div class="title-mobile">
+          <h2>Adam Bougma</h2>
+          <div>Développeur Web & Administrateur Réseau</div>
+        </div>
+      </div>
+
+      <!-- Section Contact -->
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-birthday-cake"></i> 19 juillet 2004</li>
+          <li><i class="fas fa-map-marker-alt"></i> Rue de la Drève Jouveneau, 41</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+32470444843">(+32) 470 44 48 43</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:adambougma55@gmail.com">adambougma55@gmail.com</a></li>
+          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/adam-bougma-60639b341/" target="_blank" rel="noopener noreferrer">Adam Bougma</a></li>
+          <li><i class="fab fa-github"></i> <a href="https://github.com/JalJim" target="_blank" rel="noopener noreferrer">github.com/adambougma</a></li>
+          <li><i class="fas fa-id-card"></i> Permis de conduire: Catégorie B</li>
+        </ul>
+      </div>
+
+      
+      <!-- Section Langues -->
+      <div class="sidebar-section">
+        <h3>Langues</h3>
+        <ul class="languages-list">
+          <li data-proficiency="100" data-level="Natif">
+            <span class="language-name">Français</span>
+            <div class="progress-container">
+              <div class="progress-bar"></div>
+              <span class="percentage">0%</span>
+            </div>
+            <div class="level-tooltip">Natif</div>
+          </li>
+          <li data-proficiency="80" data-level="Avancé">
+            <span class="language-name">Anglais</span>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 0%"></div>
+              <span class="percentage">0%</span>
+            </div>
+            <div class="level-tooltip">Avancé</div>
+          </li>
+          <li data-proficiency="70" data-level="Intermédiaire">
+            <span class="language-name">Néerlandais</span>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 0%"></div>
+              <span class="percentage">0%</span>
+            </div>
+            <div class="level-tooltip">Intermédiaire</div>
+          </li>
+          <li data-proficiency="50" data-level="Basique">
+            <span class="language-name">Arabe</span>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 0%"></div>
+              <span class="percentage">0%</span>
+            </div>
+            <div class="level-tooltip">Basique</div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section Certifications -->
+      <div class="sidebar-section">
+        <h3>Certifications</h3>
+        <ul class="certifications-list">
+          <li><i class="fas fa-certificate"></i> CCNA: Introduction aux Réseaux</li>
+        </ul>
+      </div>
+
+      <!-- Section Hobby -->
+      <div class="sidebar-section">
+        <h3>Loisirs</h3>
+        <ul class="hobbies-list">
+          <li><i class="fas fa-running"></i>Coureur compétitif 800m/1500m</li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <!-- Contenu Principal -->
+    <main class="main-content">
+      <header data-aos="fade-down">
+        <div class="title-desktop">
+          <h1>Adam Bougma</h1>
+          <div>Développeur Web & Administrateur Réseau</div>
+        </div>
+        <div class="header-buttons">
+          <button id="theme-toggle" aria-label="Basculer en mode sombre">
+            <i class="fas fa-moon"></i> Mode Sombre
+          </button>
+          <button id="print-cv" class="print-button">
+            <i class="fas fa-print"></i> Imprimer CV
+          </button>
+        </div>
+      </header>
+      
+      <!-- Section Profil + Compétences -->
+      <section class="profile-skills" data-aos="fade-up">
+        <div class="profile-skills-container">
+          <div class="profile-column">
+            <h2>Profil</h2>
+            <p>Développeur web passionné avec une expérience pratique en infrastructure IT.  
+              Autodidacte doté de solides compétences en résolution de problèmes et expérimenté dans plusieurs langages de programmation.  
+              Actuellement étudiant en informatique.</p>
+          </div>
+          <div class="skills-chart-column">
+            <h2>Niveau de Compétences</h2>
+            <div class="chart-container">
+              <canvas id="skillsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section Formation -->
+      <section class="studies" data-aos="fade-up">
+        <h2>Formation</h2>
+        <div class="study">
+          <h3>Bachelier en Informatique</h3>
+          <p class="date">2023 - 2026</p>
+          <p class="university">Haute École en Hainaut (HEH)</p>
+          <p>Spécialisation en informatique, développement web et réseaux.</p>
+        </div>
+        <div class="study">
+          <h3>Sciences Informatiques</h3>
+          <p class="date">2022 - 2023</p>
+          <p class="university">Université de Mons (UMONS)</p>
+          <p>Base en théorie et pratique informatique.</p>
+        </div>
+        <div class="study">
+          <h3>Enseignement Secondaire</h3>
+          <p class="date">2016 - 2022</p>
+          <p class="university">Institut la Sainte Union</p>
+          <p>Option mathématiques.</p>
+        </div>
+      </section>
+      
+      <!-- Section Projets -->
+      <section class="projects" data-aos="fade-up">
+        <h2>Projets</h2>
+        <div class="project">
+          <h3>Jeu de Puzzle en JAVA</h3>
+          <p class="date">2023</p>
+          <ul>
+            <li>Jeu de puzzle  inspiré de "Cats Organized Neatly" avec multijoueur et génération procédurale de niveaux</li>
+          </ul>
+        </div>
+        
+        <div class="project">
+          <h3>MEMEBANK.LOL</h3>
+          <p class="date">2024</p>
+          <ul>
+            <li>Plateforme de partage de mèmes avec comptes utilisateurs et recherche avancée</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>Simulation d'Infrastructure Réseau (Packet Tracer)</h3>
+          <p class="date">2023</p>
+          <ul>
+            <li>Simulation de réseau avec segmentation VLAN, configuration DHCP et DNS</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- Section Expérience Professionnelle -->
+      <section class="experience" data-aos="fade-up">
+        <h2>Expérience Professionnelle</h2>
+        <div class="job">
+          <h3>Tutorat en Mathématiques</h3>
+          <p class="date">2024 - 2025</p>
+          <p class="company">Haute École en Hainaut (HEH)</p>
+          <p>Cours particuliers pour étudiants universitaires en mathématiques.</p>
+        </div>
+        <div class="job">
+          <h3>Jardinier Saisonnier</h3>
+          <p class="date">2022 - Présent</p>
+          <p class="company">Auto-entrepreneur</p>
+          <p>Entretien paysager et conception de jardins.</p>
+        </div>
+      </section>
+      
+
+      <footer>
+        <p>&copy; 2025 Adam Bougma - Dernière mise à jour: Avril 2025</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      const pageHeight = document.documentElement.scrollHeight;
+      console.log("Hauteur totale du site :", pageHeight + "px");
+    });
+  </script>
+  
+</body>
+</html>
